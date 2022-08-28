@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import History from '../History/History';
 import Product from '../Product/Product';
 import './Cart.css';
 
@@ -35,14 +36,7 @@ const Cart = () => {
 
             </div>
             <div className="right_area">
-                <h1>Order Summary</h1>
-                <p>Selected Items: {cart.length}</p>
-                <p>Total Price: $1140</p>
-                <p>Total Shipping Charge: $5</p>
-                <p>Tax: $114</p>
-                <p>Grand Total: $1559</p>
-                <button>Clear Cart</button>
-                <button>Review Order</button>
+                <History sendhestory={cart}></History>
             </div>
         </div>
     );
