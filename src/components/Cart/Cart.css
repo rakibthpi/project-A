@@ -1,0 +1,21 @@
+.cart_main {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.left_area {
+    display: flex;
+    padding: 50px 41px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    gap: 38px;
+}
+
+.right_area {
+    background-color: rgb(71, 59, 59);
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    padding: 50px 20px;
+    color: #fff;
+}
